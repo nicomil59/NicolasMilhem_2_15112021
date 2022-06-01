@@ -1,0 +1,140 @@
+/* ********** ACTIVITIES ********** */
+/* ******************************** */
+
+#activities {
+    width: 93%;
+    max-width: 1440px;
+    margin: 50px auto;
+}
+
+.activities-title {
+    font-size: 22px;
+}
+
+.activities-wrapper {
+    margin-top: 25px;
+    height: 446px;
+    display: flex;
+    justify-content: space-between;
+    gap: 3%;
+}
+
+/* *** ACTIVITIES - MEDIA QUERIES *** */
+/* ********************************** */
+
+@media screen and (max-width: 768px) {
+   
+    #activities {
+        width: 89%;
+    }
+    
+    .activities-wrapper {
+        height: auto;
+        flex-direction: column;
+    }
+    
+}
+
+/* ***** BLOC ***** */
+/* **************** */
+
+.activities-bloc {
+    width: 25%;
+}
+
+.activities-bloc2, .activities-bloc4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* *** BLOC - MEDIA QUERIES *** */
+/* **************************** */
+
+@media screen and (max-width: 768px) {
+   
+    .activities-bloc {
+        width: 100%;
+        margin-bottom: 6.5%;
+    }
+
+    .activities-bloc4 {
+        margin-bottom: 0;
+    }
+    
+}
+
+/* ***** CARD-ACTIVITY ***** */
+/* ************************* */
+
+.card-activity {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s;
+}
+
+.card-activity:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.card-activity1, .card-activity4 {
+    height: 100%;
+}
+
+.card-activity2 {
+    height: 53%;
+}
+
+.card-activity3 {
+    height: 37%;
+}
+
+.card-activity5 {
+    height: 44%;
+}
+
+.card-activity6 {
+    height: 46%;
+}
+
+.card-activity-image {
+    height: calc(100% - 55px);
+}
+
+.card-activity-image img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.card-activity-body {
+    height: 55px;
+    padding: 6.5% 4.5% 3% 5%;
+}
+
+.card-activity-title {
+    font-weight: 600;
+}
+
+/* *** CARD-ACTIVITY - MEDIA QUERIES *** */
+/* ************************************* */
+
+@media screen and (max-width: 768px) {
+   
+    .card-activity {
+        width: 100%;
+        max-width: 450px;
+        height: 190px;
+    }
+
+    .card-activity2, .card-activity5 {
+        margin-bottom: 6.5%;
+    }
+    
+}
+
+
+

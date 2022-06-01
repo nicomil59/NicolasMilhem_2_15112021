@@ -1,0 +1,342 @@
+/* ********** ACCOMODATIONS ********** */
+/* *********************************** */
+
+#accomodations {
+    width: 93%;
+    max-width: 1440px;
+    margin: 40px auto 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* *** ACCOMODATIONS - MEDIA QUERIES *** */
+/* ************************************* */
+
+@media screen and (max-width: 992px) {
+   
+    #accomodations {
+        flex-direction: column-reverse;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+   
+    #accomodations {
+        width: 100%;
+    }
+    
+}
+
+/* ***** CONTAINER - SAME STYLES ***** */
+/* *********************************** */
+
+.container-results, .container-mostpopular {
+    border-radius: 20px;
+}
+
+.container-title {
+    font-size: 22px;
+}
+
+/* ***** CONTAINER-RESULTS ***** */
+/* ***************************** */
+
+.container-results {
+    width: 66%;
+    background-color: var(--grey);
+    padding: 3%;
+}
+
+.container-results-cards {
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.container-results-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-results-row:first-child {
+    margin-bottom: 25px;
+}
+
+.container-results-showmore {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.container-results-showmore a {
+    transition: color 0.3s;
+}
+
+.container-results-showmore a:hover {
+    color: var(--blue);
+    transition: color 0.3s;
+}
+
+/* *** CONTAINER-RESULTS - MEDIA QUERIES *** */
+/* ***************************************** */
+
+@media screen and (max-width: 992px) {
+   
+    .container-results {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+   
+    .container-results {
+        background-color: var(--white);
+        /* padding du bas à 0 pour diminuer l'espace avec la partie activities en version mobile */
+        padding: 36px 0 0;
+        border-radius: 0;
+    }
+
+    .container-results-row:first-child {
+        margin-bottom: 0;
+    }
+
+    .container-results-wrapper {
+        width: 89%;
+        margin: 0 auto;
+    }
+
+    .container-results-cards {
+        margin-top: 6%;
+        margin-bottom: 8%;
+    }
+
+    .container-results-row {
+        flex-direction: column;
+    }
+    
+}
+
+/* ***** CONTAINER-MOSTPOPULAR ***** */
+/* ********************************* */
+
+.container-mostpopular {
+    width: 31%;
+    background-color: var(--grey);
+    padding: 3%;
+}
+
+.container-mostpopular-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-mostpopular-header .fas {
+    font-size: 22px;
+}
+
+.container-mostpopular-cards {
+    margin-top: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* *** CONTAINER-MOSTPOPULAR - MEDIA QUERIES *** */
+/* ********************************************* */
+
+@media screen and (max-width: 992px) {
+   
+    .container-mostpopular {
+        width: 100%;
+        margin-bottom: 3%;
+    }
+    
+    .container-mostpopular-cards {
+        flex-direction: row;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+    .container-mostpopular {
+        margin-bottom: 0;
+        padding: 10% 0;
+        border-radius: 0;
+    }
+    
+    .container-mostpopular-wrapper {
+        width: 89%;
+        margin: 0 auto;
+    }
+
+    .container-mostpopular-cards {
+        flex-direction: column;
+    }
+    
+}
+
+/* ***** CARD - SAME STYLES ***** */
+/* ****************************** */
+
+.card {
+    background-color: var(--white);
+    border: 5px solid var(--white);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-pricing {
+    font-size: 14px;
+}
+
+.card-rating {
+    display: flex;
+    gap: 1px;
+}
+
+.card-rating .fas {
+    font-size: 12px;
+}
+
+.card-rating .star-blue {
+    color: var(--blue);
+}
+
+.card-rating .star-grey {
+    color: #e1e1e1;
+}
+
+/* ***** CARD RESULT ***** */
+/* *********************** */
+
+.card-result {
+    width: 31%;
+    height: 200px;
+}
+
+.card-result-image {
+    height: 57%;
+}
+
+.card-result .card-img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-result-body {
+    height: 43%;
+    padding: 4.5% 4.5% 2% 4.5%;
+}
+
+.card-result-pricing {
+    padding-bottom: 1%;
+}
+
+
+/* *** CARD-RESULT - MEDIA QUERIES *** */
+/* *********************************** */
+
+@media screen and (max-width: 768px) {
+   
+    .card-result {
+        width: 100%;
+        max-width: 450px;
+        margin-bottom: 3.5%;
+    }
+    
+}
+
+/* ***** CARD MOSTPOPULAR ***** */
+/* **************************** */
+
+.card-mostpopular {
+    width: 100%;
+    height: 144px;
+    margin-bottom: 10%;
+}
+
+.card-mostpopular:last-child {
+    margin-bottom: 0;
+}
+
+.card-mostpopular-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-mostpopular-image {
+    width: 38%;
+}
+
+.card-mostpopular .card-img {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.card-mostpopular-body {
+    width: 62%;
+    padding: 4.5% 2% 3% 6%;
+}
+
+.card-mostpopular-pricing {
+    padding: 3% 0;
+    margin-bottom: auto;
+}
+
+
+/* *** CARD-MOSTPOPULAR - MEDIA QUERIES *** */
+/* **************************************** */
+
+@media screen and (max-width: 992px) {
+   
+    .card-mostpopular {
+        width: 32%;
+        margin-bottom: 3%;
+    }
+
+    .card-mostpopular-body {
+        padding: 4.5% 2% 3% 6%;
+    }
+
+    .card-mostpopular-title {
+        font-size: 14.5px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+   
+    .card-mostpopular {
+        width: 100%;
+        max-width: 450px;
+        margin-bottom: 3.5%;
+    }
+
+    .card-mostpopular-title {
+        font-size: 16px;
+    }
+    
+}

@@ -1,0 +1,79 @@
+/* ********** FOOTER ********** */
+/* **************************** */
+
+footer {
+    width: 100%;
+    background-color: var(--grey);
+    padding: 3% 0;
+}
+
+.footer-wrapper {
+    width: 93%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.footer-bloc {
+    margin-right: 14%;
+    /* les 3 blocs prennent chacun un tiers de l'espace du conteneur */
+    flex: 1;
+}
+
+.footer-bloc-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.bloc-list-item {
+    margin-bottom: 15px;
+}
+
+.bloc-list-item a {
+    transition: color 0.3s;
+}
+
+.bloc-list-item a:hover {
+    color: var(--blue);
+    transition: color 0.3s;
+}
+
+/* *** FOOTER - MEDIA QUERIES *** */
+/* ****************************** */
+
+@media screen and (max-width: 992px) {
+   
+    footer {
+        padding: 4% 0;
+    }
+    
+    .footer-bloc {
+        margin-right: 9%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+   
+    footer {
+        padding: 12.5% 0;
+    }
+    
+    .footer-wrapper {
+        width: 89%;
+        flex-direction: column;
+    }
+
+    .footer-bloc {
+        margin-bottom: 12%;
+    }
+
+    .footer-bloc:last-child {
+        margin-bottom: 0;
+    }
+
+    .bloc-list-item:last-child {
+        margin-bottom: 0;
+    }
+
+}

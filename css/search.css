@@ -1,0 +1,248 @@
+/* ********** SECTION - SEARCH ********** */
+/* ************************************** */
+
+#search {
+    width: 93%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.search-title {
+    font-size: 22px;
+}
+
+.search-subtitle {
+    margin: 8px 0 16px;
+}
+
+/* *** SEARCH - MEDIA QUERIES *** */
+/* ****************************** */
+
+@media screen and (max-width: 768px) {
+   
+    #search {
+        margin-top: 30px;
+        width: 89%;
+    }
+    
+}
+
+/* ***** SEARCH FORM ***** */
+/* *********************** */
+
+.search-box {
+    position: relative;
+    width: 420px;
+    height: 50px;
+}
+
+.search-box label {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.search-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    z-index: -1;
+}
+
+.search-input, .search-btn {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.search-input {
+    height: 100%;
+    width: 235px;
+    margin-left: 50px;
+    border-top: 2px solid var(--grey);
+    border-bottom: 2px solid var(--grey);
+    border-left: none;
+    border-right: none;
+    padding-left: 25px;
+}
+
+.search-btn {
+    height: 100%;
+    width: 135px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: var(--white);
+    background-color: var(--blue);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.search-btn:hover {
+    background-color: #075bd9;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.search-btn .fas {
+    display: none;
+}
+
+/* *** SEARCH FORM - MEDIA QUERIES *** */
+/* *********************************** */
+
+@media screen and (max-width: 768px) {
+    
+    .search-box {
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    /* largeur de la partie recherche = largeur box - 50px - 50px + 20px (bordure rattrape le bouton submit)  */
+    .search-input {
+        width: calc(100% - 80px);
+    }
+
+    .search-btn {
+        width: 50px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .search-btn span {
+        display: none;
+    }
+
+    .search-btn .fas {
+        display: block;
+    }
+    
+}
+
+/* ***** FILTERS ***** */
+/* ******************* */
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 32px;
+    margin: 30px 0;
+}
+
+.filters-title {
+    font-size: 18px;
+}
+
+.filters-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+}
+
+.filter-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+    border-radius: 25px;
+    border: 2px solid #e1e1e1;
+    height: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.filter-item:hover  {
+    background-color: #f1f7ff;   
+    transition: background-color 0.3s ease-in-out;
+}
+
+.filter-item-icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--light-blue);
+    color: var(--blue);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -2px;
+}
+
+.filter-item-icon .fas {
+    font-size: 19px;
+}
+
+.filter-item-text {
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    padding: 0 26px 0 13px;
+    font-size: 18px;
+    /* text-align: center; */
+}
+
+
+/* *** FILTERS - MEDIA QUERIES *** */
+/* ******************************* */
+
+
+@media screen and (max-width: 768px) {
+   
+    .filters {
+        gap: 15px;
+    }
+
+    .filters-list {
+        gap: 0;
+    }
+
+    .filter-item {
+        margin-right: 11px;
+        margin-bottom: 13px;
+    }
+
+    .filter-item-text {
+        padding: 0 12px 0 13px;
+        font-size: 16px;
+    }
+    
+}
+
+/* ***** INFO ***** */
+/* **************** */
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.info-icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #e1e1e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.info-icon .fas {
+    font-size: 12px;
+    color: var(--blue);
+}
